@@ -47,17 +47,35 @@
             timeLeft--;
             document.getElementById("timer").textContent = timeLeft;
 
-            // Play voice effect here (optional)
-            // var audio = new Audio('voice_effect.mp3');
-            // audio.play();
-
             if (timeLeft <= 0) {
                 clearInterval(countdownTimer);
-                // Redirect to your channel here
                 window.location.href = "https://t.me/+2eeQaz8j3eswODc9";
             }
         }, 1000);
     </script>
+
+    <style>
+        /* Button styling */
+        .btn-telegram {
+            background-color: #2196F3; /* Light blue color */
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px; /* Rounded corners */
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .btn-telegram:hover {
+            background-color: #1976D2; /* Darker blue on hover */
+            color: white;
+        }
+        /* Countdown timer color */
+        #timer {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
@@ -78,8 +96,8 @@
                     </div>
                 </div>
 
-                <div class="container" style="text-align: center; margin-top: -30px;">
-                    <a href="https://t.me/+2eeQaz8j3eswODc9" target="_blank" class="btn btn-primary btn-lg alink" style="margin: -1px;">
+                <div class="container" style="text-align: center; margin-top: -50px;">
+                    <a href="https://t.me/+2eeQaz8j3eswODc9" target="_blank" class="btn-telegram">
                         JOIN FREE TELEGRAM CHANNEL
                     </a>
                 </div>
@@ -91,7 +109,7 @@
                 </div>
 
                 <div class="container" style="text-align: center; margin-top: 10px;">
-                    <a href="https://t.me/+2eeQaz8j3eswODc9" target="_blank" class="btn btn-primary btn-lg alink" style="margin: 5px;">
+                    <a href="https://t.me/+2eeQaz8j3eswODc9" target="_blank" class="btn-telegram">
                         JOIN FREE TELEGRAM CHANNEL
                     </a>
                 </div>
