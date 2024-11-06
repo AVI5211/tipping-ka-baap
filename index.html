@@ -39,6 +39,25 @@
     <!-- JavaScript -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        var timeLeft = 60;
+        var countdownTimer = setInterval(function () {
+            timeLeft--;
+            document.getElementById("timer").textContent = timeLeft;
+
+            // Play voice effect here (optional)
+            // var audio = new Audio('voice_effect.mp3');
+            // audio.play();
+
+            if (timeLeft <= 0) {
+                clearInterval(countdownTimer);
+                // Redirect to your channel here
+                window.location.href = "https://t.me/+Fd5JztkbuFphZTU1";
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
 
@@ -52,10 +71,15 @@
                     <h1 style="font-size: 24px; margin-top: 5px;">AKASH DADA</h1>
                     <h2 style="font-size: 20px; font-weight: bold; margin-top: 5px;">CRICKET PREDICTION KA BADSHAH</h2>
                     <p style="font-size: 14px; margin: 5px 0;">रिकॉर्ड बोलता है 🔥 पहले हमारी पुरानी हिस्ट्री चेक करो फिर विश्वास करना</p>
+                    
+                    <!-- Countdown Timer -->
+                    <div style="font-size: 18px; color: rgb(196, 196, 195); margin-top: 10px;">
+                        <p>Free Joining Ends In <span id="timer">60</span></p>
+                    </div>
                 </div>
 
-                <div class="container" style="text-align: center; margin-top: 10px;">
-                    <a href="https://t.me/+2eeQaz8j3eswODc9" target="_blank" class="btn btn-primary btn-lg alink" style="margin: 5px;">
+                <div class="container" style="text-align: center; margin-top: -30px;">
+                    <a href="https://t.me/+2eeQaz8j3eswODc9" target="_blank" class="btn btn-primary btn-lg alink" style="margin: -10px;">
                         JOIN FREE TELEGRAM CHANNEL
                     </a>
                 </div>
